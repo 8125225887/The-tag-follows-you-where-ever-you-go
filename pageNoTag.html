@@ -1,0 +1,109 @@
+<html>
+<head>
+   <meta charset="UTF-8">
+    <script src="jquery-1.11.3.min.js"></script>
+
+    <style>
+        #div{
+            width: 150px;
+            background-color: #a2ab4e;
+        }
+/* this div1 id will be activated when you scroll up at 1200 position on window screen */
+        #div1{
+            width: 150px;
+            background-color: #a2ab4e;
+            margin-top: 644px;
+            margin-left: 52px;
+            position: fixed;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+      <button id = "div1">clickHere</button>
+      <div>
+        <hr />line1
+        <hr />line2
+        <hr />line3
+        <hr />line4
+        <hr />line5
+        <hr />line6
+        <hr />line7
+        <hr />line8
+        <hr />line9
+        <hr />line10
+        <hr />line11
+        <hr />line12
+        <hr />line13
+        <hr />line14
+        <hr />line15
+        <hr />line16
+        <hr />line17
+        <hr />line18
+        <hr />line19
+        <hr />line20
+        <hr />line21
+        <hr />line22
+        <hr />line23
+        <hr />line24
+        <hr />line25
+        <hr />line26
+        <hr />line27
+        <hr />line28
+        <hr />line29
+        <hr />line30
+        <hr />line31
+        <hr />line32
+        <hr />line33
+        <hr />line34
+        <hr />line35
+        <hr />line36
+        <hr />line37
+        <hr />line38
+        <hr />line39
+        <hr />line40
+        <hr />line41
+        <hr />line42
+        <hr />line43
+        <hr />line44
+        <hr />line 45
+        <hr />line46
+        <hr />line47
+        <hr />line48
+        <hr />line49
+        <hr />line50
+        <hr />line51
+        <button id = "div" onclick = 'showBox()'>clickHere</button>
+        <hr />line52
+        <hr />line53
+        <hr />line54
+        <hr />line55
+        <hr />line56
+        <hr />line57
+        <hr />line58
+        <hr />line59
+        <hr />line60
+        <hr />line61
+        <hr />line62
+        <hr />line63
+        <hr />line64
+        <hr />line65
+        <hr />line66
+        <hr />line67
+        <hr />line68</div>
+
+<script>
+  $(window).scroll(function() {
+      var scrollNumber = $(window).scrollTop();
+      console.log(scrollNumber);
+      if (scrollNumber <= 1200) {
+        $("#div1").css("display","initial");
+      }
+      else {
+        $("#div1").css("display","none");
+      }
+  });
+
+</script>
+</body>
+</html>
